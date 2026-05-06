@@ -214,7 +214,7 @@ export default function Index() {
                 <ul className="space-y-3 mb-8 flex-1">
                   {plan.features.map((f) => (
                     <li key={f} className="flex items-start gap-3">
-                      <Icon name="Check" size={16} className="mt-0.5 flex-shrink-0" style={{ color: "#FF6B00" } as React.CSSProperties} />
+                      <Icon name="Check" size={16} className="mt-0.5 flex-shrink-0" style={{ color: "#FF6B00" }} />
                       <span className="text-sm" style={{ color: "#AAA", fontFamily: "'Golos Text', sans-serif" }}>{f}</span>
                     </li>
                   ))}
@@ -323,7 +323,7 @@ export default function Index() {
                   className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-5"
                   style={{ background: "rgba(255,107,0,0.15)" }}
                 >
-                  <Icon name="CheckCircle" size={32} style={{ color: "#FF6B00" } as React.CSSProperties} />
+                  <Icon name="CheckCircle" size={32} style={{ color: "#FF6B00" }} />
                 </div>
                 <h3 className="font-heading text-3xl uppercase font-bold text-white mb-3">
                   Заявка принята!
@@ -362,7 +362,7 @@ export default function Index() {
                   { icon: "Mail", text: "hello@ironforge.ru" },
                 ].map((item) => (
                   <li key={item.text} className="flex items-center gap-3">
-                    <Icon name={item.icon} size={14} style={{ color: "#FF6B00", flexShrink: 0 } as React.CSSProperties} />
+                    <Icon name={item.icon} size={14} style={{ color: "#FF6B00", flexShrink: 0 }} />
                     <span className="text-sm" style={{ color: "#666", fontFamily: "'Golos Text', sans-serif" }}>{item.text}</span>
                   </li>
                 ))}
@@ -403,7 +403,7 @@ export default function Index() {
                   className="w-8 h-8 rounded flex items-center justify-center transition-all hover:scale-110"
                   style={{ background: "#1A1A1A", border: "1px solid #2D2D2D" }}
                 >
-                  <Icon name="ExternalLink" size={12} style={{ color: "#555" } as React.CSSProperties} />
+                  <Icon name="ExternalLink" size={12} style={{ color: "#555" }} />
                 </a>
               ))}
             </div>
