@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import Icon from "@/components/ui/icon";
 
 const HERO_IMAGE = "https://cdn.poehali.dev/projects/fc5369c8-d3e8-4c62-ae1d-9b7a26b18849/files/0f588989-bb3e-4496-8f77-57734307cbfa.jpg";
@@ -62,7 +62,7 @@ export default function Index() {
   const [form, setForm] = useState({ name: "", phone: "" });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (form.name && form.phone) {
       setSubmitted(true);
